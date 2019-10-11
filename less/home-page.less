@@ -2,6 +2,15 @@
 
 .home {
 
+   @media @phone{
+     display:flex;
+     flex-direction:column;
+     width:100%;
+    justify-content:center;
+     max-width:vw;
+     margin: 0 auto;
+     padding-right:4px;
+   }
   .intro {
 
     h2 {
@@ -58,6 +67,7 @@
       }
 
       .btn {
+        .custom-btn();
       }
     }
 
@@ -73,3 +83,10 @@
     }
   }
 }// home
+.headerImage{
+  @media @phone{
+    width:vw;
+    display:flex;
+    justify-content:center;
+  }
+}

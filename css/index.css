@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+@media (max-width:500px) {
+  nav {
+    width: vw;
+    display: flex;
+  }
+}
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+nav .titleDiv {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  text-align: center;
+}
+nav .navBar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  font-size: 1.4rem;
+  font-family: 'Russo One', sans-serif;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+@media (max-width:500px) {
+  nav .navBar {
+    width: vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+nav .navBar a {
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+  padding: 1rem;
+}
+@media (max-width:500px) {
+  nav .navBar a {
+    width: vw;
+    justify-content: space-evenly;
+    margin: 1rem;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:500px) {
+  html {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width:500px) {
+  html .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    /*border: 2px dotted red;*/
+  }
+}
+html .home .intro h2 {
+  padding: 15px;
+}
+html .home .intro p {
+  padding: 0 15px;
+}
+html .home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+html .home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width:500px) {
+  html .home img.sky {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  html .home img.launch {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  html .home img.blast {
+    width: 90%;
+  }
+}
+html .home .visit-planets {
+  padding: 15px;
+}
+html .home .visit-planets h3 {
+  margin-top: 11px;
+}
+html .home .visit-planets p {
+  margin-top: 13px;
+}
+html .home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  html .home .walk {
+    width: vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-right: 4%;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+html .home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width:500px) {
+  html .home .walk .walk-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    margin-top: 4rem;
+  }
+}
+html .home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+html .home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+html .home .walk .walk-text .btn {
+  display: block;
+  background-color: #23293B;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  font-size: 2rem;
+  padding-right: 1.3rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+@media (max-width:500px) {
+  html .home .walk .walk-text .btn {
+    width: 100%;
+    max-width: vw;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+html .home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #23293B;
+}
+@media (max-width:500px) {
+  html .home .walk .walk-text .btn {
+    margin: 0 auto;
+  }
+}
+html .home .walk .walk-img {
+  width: 46%;
+}
+@media (max-width:500px) {
+  html .home .walk .walk-img {
+    width: 90%;
+  }
+}
+html .home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width:500px) {
+  html .headerImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width:500px) {
+  html .headerImage .headerImg {
+    width: 100%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+@media (max-width:500px) {
+  .walkImg {
+    width: 90%;
+  }
+}

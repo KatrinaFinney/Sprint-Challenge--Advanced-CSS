@@ -33,14 +33,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+An adaptive website is made with multiple screen sizes in mind, but a fully responsive website is made to be viewed on any/all screen sizes.
 
 2. Describe what it means to be mobile first vs desktop first.
+A mobile first design begins with the design for phone screen size and then uses min-width media queries to adjust the site for bigger screens, all the way up to desktop. Desktop first uses the opposite approach, using max-width media queries to adjust for different screens, with the mobile phone being the last part of the design.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+It sets 1 em/rem to 10px, simplifying dimensional math during design.
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing is a way to write much cleaner and shorter CSS, giving us the ability to create a more flexible and changeable website. Preprocessing uses what’s called a compiler to translate a preprocessing language, a kind of CSS shorthand, into the vanilla CSS read and understood by browsers. It saves time, and empowers the developer to make sitewide design changes without having to individually change elements that are repeated throughout the site, and adds simplicity in styling.
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+I really like the idea of using variables for colors, etc. It makes perfect sense to me because I think the most visually appealing sites use a maximum of five colors, and uniformity/simplicity adds to a professional and polished look. I feel I have a pretty solid grasp of preprocessing. I am still mastering how to effectively enact  media queries, and still get hung up a bit with flexbox, which I am going to combat by better organizing my html and writing relevant comments, ie(labels on bottoms of divs, etc).  
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
